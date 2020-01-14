@@ -6,6 +6,11 @@ This is a Rest API test project.
 - PHP 7.3
 - MySQL
 
+## Entry point with GUI
+```bash
+http(s)://*/web/
+```
+
 ## Setting up with Vagrant
 
 Clone repository:
