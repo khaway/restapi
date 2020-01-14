@@ -1,0 +1,16 @@
+/node_modules
+/public/css
+/public/js
+/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+mix-manifest.json
+composer.lock
+yarn.lock
+.vagrant/
+.idea/
+package-lock.json
