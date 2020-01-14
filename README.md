@@ -60,3 +60,8 @@ Checkout url:
 http://localhost
 ```
 
+## Database configure
+Database can be configured with:
+```bash
+.env
+```
