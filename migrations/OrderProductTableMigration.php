@@ -23,13 +23,5 @@ class OrderProductTableMigration extends Migration implements MigrationInterface
             
             DEFAULT CHARACTER SET utf8 COLLATE 'utf8_unicode_ci'
         ");
-
-        // $this->exec("ALTER TABLE `order_product`
-        //       ADD CONSTRAINT `order_product_order_id_foreign` FOREIGN KEY (`order_id`)
-        //       REFERENCES `orders` (`id`)");
-        //
-        // $this->exec("ALTER TABLE `order_product`
-        //       ADD CONSTRAINT `order_product_product_id_foreign` FOREIGN KEY (`product_id`)
-        //       REFERENCES `products` (`id`)");
     }
 }
