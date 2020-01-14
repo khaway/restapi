@@ -17,7 +17,7 @@ trait ReturnsJson
      * @param int $status
      * @param array $headers
      * @param int $options
-     * @return JsonResponse
+     * @return \Illuminate\Http\JsonResponse
      */
     public function json($data = [], $message = null, $status = 200, array $headers = [], $options = 0)
     {

@@ -32,7 +32,7 @@ class ProductController extends Controller
     /**
      * Get all of the balancers for the given project.
      *
-     * @return Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {

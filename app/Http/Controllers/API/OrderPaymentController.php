@@ -19,7 +19,7 @@ class OrderPaymentController extends Controller
      * @param Request $request
      * @param OrderRepository $orderRepository
      * @param Client $httpClient
-     * @return void
+     * @return \Illuminate\Http\JsonResponse
      */
     public function __invoke(Request $request, OrderRepository $orderRepository, Client $httpClient)
     {

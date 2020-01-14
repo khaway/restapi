@@ -17,7 +17,7 @@ class GenerateProductsController extends Controller
      * @param FakerService $fakerService
      * @param ProductRepository $productRepository
      * @param int $amount
-     * @return void
+     * @return \Illuminate\Http\JsonResponse
      */
     public function __invoke(FakerService $fakerService, ProductRepository $productRepository, $amount = 20)
     {

@@ -54,7 +54,7 @@ class OrderController extends Controller
      * Handle the incoming request.
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(Request $request)
     {
