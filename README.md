@@ -66,7 +66,7 @@ http://localhost
 ```
 
 ## Database configure
-Database can be configured with:
+Database can be configured with .env:
 ```bash
-.env
+cp .env.example .env
 ```
