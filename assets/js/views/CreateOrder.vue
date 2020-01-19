@@ -3,8 +3,8 @@
         <div class="flex">
             <div class="w-1/2">
                 <div v-for="product in products">
-                    <input :id="product.name" type="checkbox" v-model="product_ids" :value="product.id"/>
-                    <label :for="product.name">{{ product.name }} / {{ product.price }}$</label>
+                    <input :id="product.id" type="checkbox" v-model="product_ids" :value="product.id"/>
+                    <label :for="product.id">{{ product.name }} / {{ product.price }}$</label>
                 </div>
             </div>
             <div class="w-1/2">
