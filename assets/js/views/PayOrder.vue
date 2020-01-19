@@ -2,11 +2,11 @@
     <div>
         <div class="flex">
             <div class="w-1/2 pr-4">
-                <label class="block" for="order_id">Order id:</label>
+                <label class="block font-bold" for="order_id">Select an order id:</label>
                 <select class="block mt-4" id="order_id" v-model="order_id" name="order_id">
-                    <option v-for="order in orders" :value="order.id">{{ order.name }} ({{ order.amount }}$ / {{ order.status }})</option>
+                    <option v-for="order in orders" :value="order.id">{{ order.amount }}$ / {{ order.status }}</option>
                 </select>
-                <label class="block pt-4" for="amount">Amount:</label>
+                <label class="block pt-4 font-bold" for="amount">Amount:</label>
                 <input id="amount" class="shadow appearance-none border rounded w-full py-2 px-3 mt-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                        type="text" v-model="amount" placeholder="Amount">
             </div>
