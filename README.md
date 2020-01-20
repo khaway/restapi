@@ -17,14 +17,23 @@ Clone repository:
 ```bash
 git clone https://github.com/khaway/restapi.git
 ```
+Install composer dependencies:
+```bash
+composer install
+```
+Make Vagrantfile:
+```bash
+Mac / Linux: php vendor/bin/homestead make
+Windows: vendor\\bin\\homestead make
+```
+Add assigment to hosts file:
+```bash
+192.168.10.10 homestead.test
+```
 Run Vagrant machine (before running machine you need to configure Homestead.yaml):
 ```bash
 vagrant up
 vagrant ssh
-```
-Install composer dependencies:
-```bash
-composer install
 ```
 Install npm dependencies:
 ```bash

@@ -41,7 +41,7 @@ class OrderController extends Controller
     }
 
     /**
-     * Get all of the balancers for the given project.
+     * Get all of the orders.
      *
      * @return Response
      */
