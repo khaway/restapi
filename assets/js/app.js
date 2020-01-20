@@ -32,8 +32,8 @@ const app = new Vue({
             this.$store.state.response = response.data;
             return response;
         }, error => {
-            this.$store.state.response = error;
-            return Promise.reject(error);
+            this.$store.state.response = error.response.data;
+            return Promise.reject(error.response);
         });
     },
     router,

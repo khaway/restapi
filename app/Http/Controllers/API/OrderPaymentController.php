@@ -32,12 +32,12 @@ class OrderPaymentController extends Controller
 
         $order = $orderRepository->find($orderId);
 
-        if ($order->amount() != $amount || $order->status != Order::STATUS_NEW) {
-            return $this->json(
-                compact('order', 'orderId', 'amount'),
-                'Order status invalid or given amount not equals to order amount.',
-                400
-            );
+        if ($order->amount() != $amount) {
+            return $this->json(compact('order', 'amount'), 'Given amount not equals to order amount.', 400);
+        }
+
+        if ($order->status != Order::STATUS_NEW) {
+            return $this->json(compact('order'), 'Order status must be ['.Order::STATUS_NEW.']', 400);
         }
 
         $response = $httpClient->get('https://ya.ru');
